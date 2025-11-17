@@ -3,7 +3,7 @@ services:
     build:
       context: .
     ports:
-      - "8001:8000"
+      - "8000:8000"
     volumes:
       - ./:/app
       - my_media:/files/media
@@ -16,7 +16,7 @@ services:
     depends_on:
       db:
         condition: service_healthy
-        restart: true
+    restart: always
 
   db:
     image: postgres:16.0-alpine3.17

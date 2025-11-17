@@ -3,3 +3,5 @@ README.md
 .idea
 .github
 .venv
+__pycache__/
+*.pyc
