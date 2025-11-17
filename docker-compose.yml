@@ -32,7 +32,7 @@ services:
     env_file:
       - .env
     volumes:
-      - my_db:$PG_DATA
+      - my_db:/var/lib/postgresql/data
 
 volumes:
   my_db:
